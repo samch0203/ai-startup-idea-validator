@@ -457,13 +457,3 @@ report more transparent. The modular design supports incremental
 development, starting with idea submission and web search before adding
 the remaining analysis and reporting capabilities.
 
-## Suggested GitHub location
-
-Save this document as:
-
-`docs/architecture/System_Architecture.md`
-
-The Mermaid diagrams are included as editable source. GitHub can render
-Mermaid diagrams in Markdown files. Before submission, the team should
-review the proposed technology choices and ensure the architecture
-matches the implementation plan agreed with the mentor.
