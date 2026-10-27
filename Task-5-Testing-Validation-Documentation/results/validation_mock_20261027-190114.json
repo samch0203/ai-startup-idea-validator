@@ -1,0 +1,438 @@
+[
+  {
+    "id": "EDTECH-01",
+    "domain": "EdTech",
+    "name": "VidyaBuddy",
+    "checks": {
+      "pipeline_ran": true,
+      "format": true,
+      "sources_present": true,
+      "urls_valid_syntax": true,
+      "no_duplicate_urls": true
+    },
+    "notes": [
+      "urls: placeholder example.com links are EXPECTED in mock mode",
+      "relevance/grounding: skipped in mock mode (no real research)"
+    ],
+    "error": null,
+    "total_seconds": 0.0,
+    "agent_seconds": {
+      "web_search_agent": 0.0,
+      "market_analysis_agent": 0.0,
+      "competitor_analysis_agent": 0.0,
+      "swot_risk_agent": 0.0,
+      "mvp_recommendation_agent": 0.0,
+      "report_generation_agent": 0.0
+    },
+    "report": {
+      "startup_idea": {
+        "name": "VidyaBuddy",
+        "description": "An AI tutor app that gives vernacular-language practice questions and doubt solving for CBSE students in Class 8 to 10.",
+        "target_market": "Class 8-10 students in tier-2 and tier-3 Indian cities",
+        "industry": "EdTech",
+        "location": "India",
+        "budget": "INR 5,00,000"
+      },
+      "market_analysis": {
+        "potential_demand": "Requires customer validation",
+        "target_customers": "Class 8-10 students in tier-2 and tier-3 Indian cities",
+        "opportunities": [
+          "Interview potential customers",
+          "Test demand with a landing page"
+        ],
+        "evidence_limit": "Mock mode; no verified market data used."
+      },
+      "competitor_analysis": {
+        "direct_competitors": "Not yet verified",
+        "indirect_competitors": "Existing alternatives customers use",
+        "differentiation_questions": [
+          "What problem is solved better?",
+          "Why would customers switch?"
+        ],
+        "evidence_limit": "Mock mode; competitor names not verified."
+      },
+      "swot_and_risks": {
+        "strengths": [
+          "A defined target customer can guide testing"
+        ],
+        "weaknesses": [
+          "Demand and costs are not yet validated"
+        ],
+        "opportunities": [
+          "Test a focused solution with early users"
+        ],
+        "threats": [
+          "Competition and low willingness to pay"
+        ],
+        "risks": [
+          "Customer demand risk",
+          "Technical feasibility risk",
+          "Financial sustainability risk"
+        ]
+      },
+      "mvp_recommendation": {
+        "mvp_features": [
+          "One core feature solving the main customer problem",
+          "Simple onboarding",
+          "A feedback collection mechanism"
+        ],
+        "validation_plan": [
+          "Interview 10 potential customers",
+          "Build a clickable prototype",
+          "Measure interest before scaling"
+        ],
+        "success_metric": "Set a measurable target after initial interviews"
+      },
+      "sources": [
+        {
+          "title": "Market research for EdTech",
+          "url": "https://example.com/market-research",
+          "content": "Placeholder research for EdTech in India. Replace this with verified web research before making business decisions."
+        },
+        {
+          "title": "Customer trends for Class 8-10 students in tier-2 and tier-3 Indian cities",
+          "url": "https://example.com/customer-trends",
+          "content": "Placeholder customer research for Class 8-10 students in tier-2 and tier-3 Indian cities."
+        }
+      ],
+      "final_summary": "Preliminary validation for VidyaBuddy: This is an initial hypothesis, not proof of business viability. Validate customer demand, willingness to pay, competitors, costs, and technical feasibility before investing."
+    },
+    "source_info": {
+      "count": 2,
+      "invalid_urls": [],
+      "placeholder_urls": [
+        "https://example.com/market-research",
+        "https://example.com/customer-trends"
+      ],
+      "duplicate_urls": [],
+      "empty_content": []
+    }
+  },
+  {
+    "id": "HEALTH-01",
+    "domain": "Healthcare",
+    "name": "CareLoop",
+    "checks": {
+      "pipeline_ran": true,
+      "format": true,
+      "sources_present": true,
+      "urls_valid_syntax": true,
+      "no_duplicate_urls": true
+    },
+    "notes": [
+      "urls: placeholder example.com links are EXPECTED in mock mode",
+      "relevance/grounding: skipped in mock mode (no real research)"
+    ],
+    "error": null,
+    "total_seconds": 0.0,
+    "agent_seconds": {
+      "web_search_agent": 0.0,
+      "market_analysis_agent": 0.0,
+      "competitor_analysis_agent": 0.0,
+      "swot_risk_agent": 0.0,
+      "mvp_recommendation_agent": 0.0,
+      "report_generation_agent": 0.0
+    },
+    "report": {
+      "startup_idea": {
+        "name": "CareLoop",
+        "description": "A remote monitoring platform that helps elderly patients with diabetes and hypertension share daily readings with their doctors.",
+        "target_market": "Elderly chronic-disease patients and their families in metro cities",
+        "industry": "Healthcare",
+        "location": "India",
+        "budget": "INR 10,00,000"
+      },
+      "market_analysis": {
+        "potential_demand": "Requires customer validation",
+        "target_customers": "Elderly chronic-disease patients and their families in metro cities",
+        "opportunities": [
+          "Interview potential customers",
+          "Test demand with a landing page"
+        ],
+        "evidence_limit": "Mock mode; no verified market data used."
+      },
+      "competitor_analysis": {
+        "direct_competitors": "Not yet verified",
+        "indirect_competitors": "Existing alternatives customers use",
+        "differentiation_questions": [
+          "What problem is solved better?",
+          "Why would customers switch?"
+        ],
+        "evidence_limit": "Mock mode; competitor names not verified."
+      },
+      "swot_and_risks": {
+        "strengths": [
+          "A defined target customer can guide testing"
+        ],
+        "weaknesses": [
+          "Demand and costs are not yet validated"
+        ],
+        "opportunities": [
+          "Test a focused solution with early users"
+        ],
+        "threats": [
+          "Competition and low willingness to pay"
+        ],
+        "risks": [
+          "Customer demand risk",
+          "Technical feasibility risk",
+          "Financial sustainability risk"
+        ]
+      },
+      "mvp_recommendation": {
+        "mvp_features": [
+          "One core feature solving the main customer problem",
+          "Simple onboarding",
+          "A feedback collection mechanism"
+        ],
+        "validation_plan": [
+          "Interview 10 potential customers",
+          "Build a clickable prototype",
+          "Measure interest before scaling"
+        ],
+        "success_metric": "Set a measurable target after initial interviews"
+      },
+      "sources": [
+        {
+          "title": "Market research for Healthcare",
+          "url": "https://example.com/market-research",
+          "content": "Placeholder research for Healthcare in India. Replace this with verified web research before making business decisions."
+        },
+        {
+          "title": "Customer trends for Elderly chronic-disease patients and their families in metro cities",
+          "url": "https://example.com/customer-trends",
+          "content": "Placeholder customer research for Elderly chronic-disease patients and their families in metro cities."
+        }
+      ],
+      "final_summary": "Preliminary validation for CareLoop: This is an initial hypothesis, not proof of business viability. Validate customer demand, willingness to pay, competitors, costs, and technical feasibility before investing."
+    },
+    "source_info": {
+      "count": 2,
+      "invalid_urls": [],
+      "placeholder_urls": [
+        "https://example.com/market-research",
+        "https://example.com/customer-trends"
+      ],
+      "duplicate_urls": [],
+      "empty_content": []
+    }
+  },
+  {
+    "id": "AGRI-01",
+    "domain": "AgriTech",
+    "name": "KisanSense",
+    "checks": {
+      "pipeline_ran": true,
+      "format": true,
+      "sources_present": true,
+      "urls_valid_syntax": true,
+      "no_duplicate_urls": true
+    },
+    "notes": [
+      "urls: placeholder example.com links are EXPECTED in mock mode",
+      "relevance/grounding: skipped in mock mode (no real research)"
+    ],
+    "error": null,
+    "total_seconds": 0.0,
+    "agent_seconds": {
+      "web_search_agent": 0.0,
+      "market_analysis_agent": 0.0,
+      "competitor_analysis_agent": 0.0,
+      "swot_risk_agent": 0.0,
+      "mvp_recommendation_agent": 0.0,
+      "report_generation_agent": 0.0
+    },
+    "report": {
+      "startup_idea": {
+        "name": "KisanSense",
+        "description": "Low-cost soil moisture sensors with a mobile app that sends irrigation and crop advisory alerts to small farmers.",
+        "target_market": "Small and marginal farmers growing vegetables and pulses in Karnataka",
+        "industry": "AgriTech",
+        "location": "India",
+        "budget": "INR 8,00,000"
+      },
+      "market_analysis": {
+        "potential_demand": "Requires customer validation",
+        "target_customers": "Small and marginal farmers growing vegetables and pulses in Karnataka",
+        "opportunities": [
+          "Interview potential customers",
+          "Test demand with a landing page"
+        ],
+        "evidence_limit": "Mock mode; no verified market data used."
+      },
+      "competitor_analysis": {
+        "direct_competitors": "Not yet verified",
+        "indirect_competitors": "Existing alternatives customers use",
+        "differentiation_questions": [
+          "What problem is solved better?",
+          "Why would customers switch?"
+        ],
+        "evidence_limit": "Mock mode; competitor names not verified."
+      },
+      "swot_and_risks": {
+        "strengths": [
+          "A defined target customer can guide testing"
+        ],
+        "weaknesses": [
+          "Demand and costs are not yet validated"
+        ],
+        "opportunities": [
+          "Test a focused solution with early users"
+        ],
+        "threats": [
+          "Competition and low willingness to pay"
+        ],
+        "risks": [
+          "Customer demand risk",
+          "Technical feasibility risk",
+          "Financial sustainability risk"
+        ]
+      },
+      "mvp_recommendation": {
+        "mvp_features": [
+          "One core feature solving the main customer problem",
+          "Simple onboarding",
+          "A feedback collection mechanism"
+        ],
+        "validation_plan": [
+          "Interview 10 potential customers",
+          "Build a clickable prototype",
+          "Measure interest before scaling"
+        ],
+        "success_metric": "Set a measurable target after initial interviews"
+      },
+      "sources": [
+        {
+          "title": "Market research for AgriTech",
+          "url": "https://example.com/market-research",
+          "content": "Placeholder research for AgriTech in India. Replace this with verified web research before making business decisions."
+        },
+        {
+          "title": "Customer trends for Small and marginal farmers growing vegetables and pulses in Karnataka",
+          "url": "https://example.com/customer-trends",
+          "content": "Placeholder customer research for Small and marginal farmers growing vegetables and pulses in Karnataka."
+        }
+      ],
+      "final_summary": "Preliminary validation for KisanSense: This is an initial hypothesis, not proof of business viability. Validate customer demand, willingness to pay, competitors, costs, and technical feasibility before investing."
+    },
+    "source_info": {
+      "count": 2,
+      "invalid_urls": [],
+      "placeholder_urls": [
+        "https://example.com/market-research",
+        "https://example.com/customer-trends"
+      ],
+      "duplicate_urls": [],
+      "empty_content": []
+    }
+  },
+  {
+    "id": "RETAIL-01",
+    "domain": "RetailTech",
+    "name": "ShelfSmart",
+    "checks": {
+      "pipeline_ran": true,
+      "format": true,
+      "sources_present": true,
+      "urls_valid_syntax": true,
+      "no_duplicate_urls": true
+    },
+    "notes": [
+      "urls: placeholder example.com links are EXPECTED in mock mode",
+      "relevance/grounding: skipped in mock mode (no real research)"
+    ],
+    "error": null,
+    "total_seconds": 0.0,
+    "agent_seconds": {
+      "web_search_agent": 0.0,
+      "market_analysis_agent": 0.0,
+      "competitor_analysis_agent": 0.0,
+      "swot_risk_agent": 0.0,
+      "mvp_recommendation_agent": 0.0,
+      "report_generation_agent": 0.0
+    },
+    "report": {
+      "startup_idea": {
+        "name": "ShelfSmart",
+        "description": "An inventory and demand-forecasting tool for small kirana stores that suggests what to reorder using sales history.",
+        "target_market": "Independent kirana and small grocery store owners in Indian cities",
+        "industry": "RetailTech",
+        "location": "India",
+        "budget": "INR 6,00,000"
+      },
+      "market_analysis": {
+        "potential_demand": "Requires customer validation",
+        "target_customers": "Independent kirana and small grocery store owners in Indian cities",
+        "opportunities": [
+          "Interview potential customers",
+          "Test demand with a landing page"
+        ],
+        "evidence_limit": "Mock mode; no verified market data used."
+      },
+      "competitor_analysis": {
+        "direct_competitors": "Not yet verified",
+        "indirect_competitors": "Existing alternatives customers use",
+        "differentiation_questions": [
+          "What problem is solved better?",
+          "Why would customers switch?"
+        ],
+        "evidence_limit": "Mock mode; competitor names not verified."
+      },
+      "swot_and_risks": {
+        "strengths": [
+          "A defined target customer can guide testing"
+        ],
+        "weaknesses": [
+          "Demand and costs are not yet validated"
+        ],
+        "opportunities": [
+          "Test a focused solution with early users"
+        ],
+        "threats": [
+          "Competition and low willingness to pay"
+        ],
+        "risks": [
+          "Customer demand risk",
+          "Technical feasibility risk",
+          "Financial sustainability risk"
+        ]
+      },
+      "mvp_recommendation": {
+        "mvp_features": [
+          "One core feature solving the main customer problem",
+          "Simple onboarding",
+          "A feedback collection mechanism"
+        ],
+        "validation_plan": [
+          "Interview 10 potential customers",
+          "Build a clickable prototype",
+          "Measure interest before scaling"
+        ],
+        "success_metric": "Set a measurable target after initial interviews"
+      },
+      "sources": [
+        {
+          "title": "Market research for RetailTech",
+          "url": "https://example.com/market-research",
+          "content": "Placeholder research for RetailTech in India. Replace this with verified web research before making business decisions."
+        },
+        {
+          "title": "Customer trends for Independent kirana and small grocery store owners in Indian cities",
+          "url": "https://example.com/customer-trends",
+          "content": "Placeholder customer research for Independent kirana and small grocery store owners in Indian cities."
+        }
+      ],
+      "final_summary": "Preliminary validation for ShelfSmart: This is an initial hypothesis, not proof of business viability. Validate customer demand, willingness to pay, competitors, costs, and technical feasibility before investing."
+    },
+    "source_info": {
+      "count": 2,
+      "invalid_urls": [],
+      "placeholder_urls": [
+        "https://example.com/market-research",
+        "https://example.com/customer-trends"
+      ],
+      "duplicate_urls": [],
+      "empty_content": []
+    }
+  }
+]

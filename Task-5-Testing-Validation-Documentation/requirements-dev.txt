@@ -1,0 +1,3 @@
+# Test dependencies (in addition to the Task 4 requirements.txt)
+httpx        # required by FastAPI's TestClient (tests/test_api.py)
+pytest       # optional - tests also run with the standard unittest module
