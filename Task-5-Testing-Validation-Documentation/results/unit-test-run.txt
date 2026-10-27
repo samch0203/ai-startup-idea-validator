@@ -1,0 +1,134 @@
+=== ORIGINAL Task 4 code (as received) ===
+test_api01_home ... ok
+test_api02_validate_each_domain ... ok
+test_api03_missing_field_returns_422 ... ok
+test_api04_empty_body_returns_422 ... ok
+test_api05_invalid_json_returns_422 ... ok
+test_api06_wrong_method_and_unknown_route ... ok
+test_api07_workflow_error_returns_502_without_leaking_details ... Validation workflow error: auth failed key=sk-SECRET-123
+ok
+test_api07b_secrets_are_not_written_to_server_log ... skipped 'KNOWN BUG-05: full exception text (which can contain API keys) is printed to the server log (AssertionError)'
+test_api08_missing_keys_in_live_mode_returns_502 ... Validation workflow error: Set TAVILY_API_KEY in your .env file.
+ok
+test_api09_unicode_payload ... ok
+test_api10_large_description_is_handled ... ok
+test_api11_openapi_docs_available ... ok
+test_live01_search_query_contains_idea_context ... ok
+test_live02_search_results_are_converted_to_schema ... ok
+test_live03_missing_tavily_key_gives_clear_error ... ok
+test_live04_results_with_invalid_urls_are_dropped ... skipped 'KNOWN BUG-02: search results with empty/invalid URLs are passed through as sources (AssertionError)'
+test_live05_missing_title_gets_default ... ok
+test_live06_missing_llm_key_gives_clear_error ... ok
+test_live07_competitor_prompt_contains_research_and_idea ... ok
+test_live08_market_prompt_forbids_invented_statistics ... ok
+test_live09_full_pipeline_with_fake_llm ... ok
+test_live10_llm_receives_previous_agent_outputs ... ok
+test_live11_no_search_results_does_not_call_llm_for_analysis ... skipped 'KNOWN BUG-03: with zero search results the LLM is still asked to analyse (hallucination risk) (AssertionError)'
+test_obs03_live_output_shape_differs_from_mock_shape
+Documents OBS-03: live agents return {'analysis': <free text>} while ... ok
+test_flag01_documented_values ... ok
+test_flag02_default_is_mock ... ok
+test_flag03_truthy_variants_stay_in_mock_mode ... skipped "KNOWN BUG-04: USE_MOCKS=1 / ' true' / 'yes' silently switches to LIVE mode (AssertionError)"
+test_flag04_explicit_false_variants_enable_live ... ok
+test_dom01_all_domains_run_end_to_end ... ok
+test_dom02_report_echoes_the_submitted_idea ... ok
+test_dom03_final_summary_mentions_startup_name ... ok
+test_dom04_market_analysis_uses_the_target_market ... ok
+test_dom05_sources_are_labelled_with_the_domain ... ok
+test_dom06_mock_output_is_honest_about_being_unverified
+Mock mode must never present itself as verified market data. ... ok
+test_obs01_mock_competitor_analysis_is_identical_across_domains ... ok
+test_obs02_mock_sources_are_placeholder_urls ... ok
+test_pipe01_order_and_data_handover ... ok
+test_pipe02_failure_in_one_agent_stops_pipeline ... ok
+test_pipe03_repeated_runs_are_independent ... ok
+test_sch01_valid_idea_gets_defaults ... ok
+test_sch02_missing_required_fields_rejected ... ok
+test_sch03_too_short_values_rejected ... ok
+test_sch04_wrong_types_rejected ... ok
+test_sch05_unicode_input_accepted ... ok
+test_sch06_whitespace_only_description_rejected ... skipped 'KNOWN BUG-01: whitespace-only text passes min_length validation (AssertionError)'
+test_sch07_whitespace_only_name_rejected ... skipped 'KNOWN BUG-01: whitespace-only text passes min_length validation (AssertionError)'
+test_bad_report ... ok
+test_good_report ... ok
+test_relevance_score ... ok
+test_small_plain_numbers_are_not_flagged ... ok
+test_ungrounded_company_names ... ok
+test_ungrounded_statistics_detects_invented_numbers ... ok
+test_check_sources_flags_problems ... ok
+test_invalid_urls ... ok
+test_placeholder_detection ... ok
+test_valid_urls ... ok
+
+----------------------------------------------------------------------
+Ran 56 tests in 0.091s
+
+OK (skipped=6)
+
+
+=== AFTER applying fixes/task4-fixes.patch (EXPECT_FIXES=1) ===
+test_api01_home ... ok
+test_api02_validate_each_domain ... ok
+test_api03_missing_field_returns_422 ... ok
+test_api04_empty_body_returns_422 ... ok
+test_api05_invalid_json_returns_422 ... ok
+test_api06_wrong_method_and_unknown_route ... ok
+test_api07_workflow_error_returns_502_without_leaking_details ... Validation workflow error: RuntimeError: auth failed key=[REDACTED]
+ok
+test_api07b_secrets_are_not_written_to_server_log ... ok
+test_api08_missing_keys_in_live_mode_returns_502 ... Validation workflow error: RuntimeError: Set TAVILY_API_KEY in your .env file.
+ok
+test_api09_unicode_payload ... ok
+test_api10_large_description_is_handled ... ok
+test_api11_openapi_docs_available ... ok
+test_live01_search_query_contains_idea_context ... ok
+test_live02_search_results_are_converted_to_schema ... ok
+test_live03_missing_tavily_key_gives_clear_error ... ok
+test_live04_results_with_invalid_urls_are_dropped ... ok
+test_live05_missing_title_gets_default ... ok
+test_live06_missing_llm_key_gives_clear_error ... ok
+test_live07_competitor_prompt_contains_research_and_idea ... ok
+test_live08_market_prompt_forbids_invented_statistics ... ok
+test_live09_full_pipeline_with_fake_llm ... ok
+test_live10_llm_receives_previous_agent_outputs ... ok
+test_live11_no_search_results_does_not_call_llm_for_analysis ... ok
+test_obs03_live_output_shape_differs_from_mock_shape
+Documents OBS-03: live agents return {'analysis': <free text>} while ... ok
+test_flag01_documented_values ... ok
+test_flag02_default_is_mock ... ok
+test_flag03_truthy_variants_stay_in_mock_mode ... ok
+test_flag04_explicit_false_variants_enable_live ... ok
+test_dom01_all_domains_run_end_to_end ... ok
+test_dom02_report_echoes_the_submitted_idea ... ok
+test_dom03_final_summary_mentions_startup_name ... ok
+test_dom04_market_analysis_uses_the_target_market ... ok
+test_dom05_sources_are_labelled_with_the_domain ... ok
+test_dom06_mock_output_is_honest_about_being_unverified
+Mock mode must never present itself as verified market data. ... ok
+test_obs01_mock_competitor_analysis_is_identical_across_domains ... ok
+test_obs02_mock_sources_are_placeholder_urls ... ok
+test_pipe01_order_and_data_handover ... ok
+test_pipe02_failure_in_one_agent_stops_pipeline ... ok
+test_pipe03_repeated_runs_are_independent ... ok
+test_sch01_valid_idea_gets_defaults ... ok
+test_sch02_missing_required_fields_rejected ... ok
+test_sch03_too_short_values_rejected ... ok
+test_sch04_wrong_types_rejected ... ok
+test_sch05_unicode_input_accepted ... ok
+test_sch06_whitespace_only_description_rejected ... ok
+test_sch07_whitespace_only_name_rejected ... ok
+test_bad_report ... ok
+test_good_report ... ok
+test_relevance_score ... ok
+test_small_plain_numbers_are_not_flagged ... ok
+test_ungrounded_company_names ... ok
+test_ungrounded_statistics_detects_invented_numbers ... ok
+test_check_sources_flags_problems ... ok
+test_invalid_urls ... ok
+test_placeholder_detection ... ok
+test_valid_urls ... ok
+
+----------------------------------------------------------------------
+Ran 56 tests in 0.088s
+
+OK
